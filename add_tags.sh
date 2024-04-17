@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "To remove the existing tags run: git tag | xargs -n1 git tag -d"
-git log --pretty=format:"%h" --all --grep='Add jest in check-system'  | xargs -n1 git tag 1.1-automated-test-cases
+git log --pretty=format:"%h" --all --grep='Add tags creation'  | xargs -n1 git tag 1.1-automated-test-cases
 git log --pretty=format:"%h" --all --grep='Should view "Required" message for all fields when user tries to register without filling fields'  | xargs -n1 git tag 1.2-improving-test-quality
 git log --pretty=format:"%h" --all --grep='Refactor: simplify checkout tests with beforeEach'  | xargs -n1 git tag 2.1-cross-browsers-testing
 git log --pretty=format:"%h" --all --grep='For download app banner'  | xargs -n1 git tag 2.2-snapshot-testing
